@@ -1,57 +1,16 @@
+const hours = document.getElementById("hours");
+const minutes = document.getElementById("minutes");
+const seconds = document.getElementById("seconds");
 
-let zadnje = document.getElementsByClassName('kocka-js')[0];
-let zadnje1 = document.getElementsByClassName('kocka-jss')[0];
-let zadnje2 = document.getElementsByClassName('kocka-jsss')[0];
+digitalClock = () => {
+  const time = new Date();
+  const getHours = time.getHours();
+  const getMinutes = time.getMinutes();
+  const getSeconds = time.getSeconds();
 
+  hours.innerHTML = getHours;
+  minutes.innerHTML = getMinutes;
+  seconds.innerHTML = getSeconds;
+};
 
-let loop;
-
-
-
-
-
-    digitalClock =()=>{
-
-        let vrijeme = new Date();
-        let sati = vrijeme.getHours();
-        let minute = vrijeme.getMinutes();
-        let sekunde = vrijeme.getSeconds();
-        zadnje.innerHTML = sati;
-        zadnje1.innerHTML = minute;
-        zadnje2.innerHTML = sekunde;
-    
-    }
-
-    digitalClock();
-
-loop = setInterval(digitalClock,1000);
-
-
-
-// setInterval(
-
-//     digitalClock =()=>{
-//         let vrijeme = new Date();
-//         let sati = vrijeme.getHours();
-//           let minute = vrijeme.getMinutes();
-//           let sekunde = vrijeme.getSeconds();
-//         zadnje.innerHTML = sati;
-//          zadnje1.innerHTML = minute;
-//           zadnje2.innerHTML = sekunde;
-    
-        
-//     }, 1000)
-
-//     digitalClock();
-
-
-
-
-
-
-
-
-
-
-
-
+setInterval(digitalClock, 1000);

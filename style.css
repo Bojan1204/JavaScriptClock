@@ -1,155 +1,84 @@
-body{
-
-    background: #080b20;
-    font-family: sans-serif;
-    font-weight: bold;
+html,
+body {
+  background: #080b20;
+  font-family: sans-serif;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
 }
 
-
-.time-title{
-
-    color: #fff;
-    position: relative;
-    font-size: 30px;
-    left: 40%;
-    top: 200px;
-    letter-spacing: 8px;
-
+.time-title {
+  color: #fff;
+  font-size: 30px;
+  letter-spacing: 8px;
+  margin-bottom: 50px;
 }
 
-
-
-#masterFlex{
-
-    display: flex;
-    position: absolute;
-    bottom: 40%;
-    left: 30%;
-
-    
-    
-  
+.container {
+  display: flex;
 }
 
-
-.kocka1{
-
-    display: flex;
-    width: 200px;
-    height: 250px;
-    border: solid 1px #000;
-    margin-right: 50px;
-    position: relative;
-    background-color: #2195ee;
-  
-    
-
-
+.time-container {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  height: 250px;
+  border: solid 1px #000;
+  margin-right: 50px;
+  background-color: #2195ee;
 }
 
-.kocka-js{
-
-    width: 200px;
-    height: 220px;
-    font-size: 100px;
-    font-weight: normal;
-    color: #fff;
-    text-align: center;
-    line-height: 220px;
-    
+.time-hours {
+  width: 200px;
+  height: 220px;
+  font-size: 100px;
+  font-weight: normal;
+  color: #fff;
+  text-align: center;
+  line-height: 220px;
 }
 
-.kocka1 .kocka-1{
-    width: 200px;
-    height: 30px;
-    text-align: center;
-    line-height: 30px;
-    letter-spacing: 5px;
-    background-color: #137aca;
-    color: #fff;
-    border-top: 1px solid #1b76bb ; 
-    position: absolute;
-    bottom: 0;
+.time-minutes {
+  width: 200px;
+  height: 220px;
+  font-size: 100px;
+  font-weight: normal;
+  color: #fff;
+  text-align: center;
+  line-height: 220px;
 }
 
-
-/* end */
-
-.kocka2 {
-    display: flex;
-    
-    width: 200px;
-    height: 250px;
-    border: solid 1px #000;
-    margin-right: 50px;
-    background-color: #2195ee;
-
-
+.time-seconds {
+  width: 200px;
+  height: 220px;
+  font-size: 100px;
+  font-weight: normal;
+  color: #fff;
+  text-align: center;
+  line-height: 220px;
 }
 
-.kocka-jss{
-
-    width: 200px;
-    height: 220px;
-    font-size: 100px;
-    font-weight: normal;
-    color: #fff;
-    text-align: center;
-    line-height: 220px;
-      
-}
-.kocka2 .kocka-1{
-    
-    width: 200px;
-    height: 30px;
-    text-align: center;
-    line-height: 30px;
-    letter-spacing: 5px;
-    background-color: #137aca;
-    color: #fff;
-    border-top: 1px solid  #1b76bb ;   
-    position: absolute;
-    bottom: 0;
-
-
+.time-wrapper {
+  width: 200px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  letter-spacing: 5px;
+  background-color: #137aca;
+  color: #fff;
+  border-top: 1px solid #1b76bb;
 }
 
-/* end  */
-
-.kocka3{
-    display: flex;
-
-    width: 200px;
-    height: 250px;
-    border: solid 1px #000;    
-    margin-right: 50px;
-    background-color: #fe0068;
-
+.time-seconds-background {
+  background-color: #fe0068;
 }
 
-.kocka-jsss{
-
-    width: 200px;
-    height: 220px;
-    font-size: 100px;
-    font-weight: normal;
-    color: #fff;
-    text-align: center;
-    line-height: 220px;
-    
-}
-
-.kocka3 .kocka-3{
-
-    height: 30px;
-    width: 200px;
-   text-align: center;
-   line-height: 30px;
-   letter-spacing: 5px;
-   background-color: #e4005d;
-   color: #fff;
-   border-top: 1px solid #c92222;
-   position: absolute;
-   bottom: 0;
-
+.seconds-background {
+  background-color: #e4005d;
+  color: #fff;
+  border-top: 1px solid #c92222;
 }
